@@ -2,12 +2,15 @@
 
 function validar_email(email)
 {
-  // escreva seu código aqui
- 
+    var regex = /^([a-zA-Z0-9._-]+)@([a-zA-Z0-9_-]+)\.([a-zA-Z]{2,5})$/;
+    return regex.test(email);
 }
   
 function validar_cep(cep){
-  // escreva seu código aqui
+ 
+    var regex = /^\d{5}-?\d{3}$/;
+    return regex.test(cep);
+  
 
 }
 
